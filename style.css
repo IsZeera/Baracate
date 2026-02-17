@@ -1,16 +1,111 @@
 body{
-    background-color: rgb(223, 206, 206);
+    background-color: rgb(231, 222, 222);
     padding: 0%;
     margin: 0%;
-}
-header{
-    background: rgb(185, 166, 166);
+    text-decoration: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 85vh 10vh;
+
+}
+
+/*Header*/
+.headerPrincipal{
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .divHeaderPrincipal{
     display: flex;
-    gap: 10px;
+}
+
+.imgLogo{
+
+}
+
+.textLogo{
+
+}
+
+.navHeaderPrincipal{
+    
+}
+
+.listasGeneral{
+    display: flex;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.listaUniteral{
+
+}
+
+.sectionHeaderMenu{
+
+}
+
+
+
+
+/*main cabezera*/
+.mainPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlePrincipal{
+    margin: 0%;
+    padding: 0%;
+}
+
+.divHeader{
+
+}
+
+.h3titlePrincipal{
+    margin: 0%;
+    padding: 0%;
+}
+
+.sectionNav{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navMainHeader{
+    display: flex;
+    gap: 5px;
+    list-style-type: none;+
+}
+
+
+
+
+/*main seccion contenido*/
+
+.sectioContent{
+
+}
+
+.contetnPrincipal{
+
+}
+
+.descriptionContent{
+    display: flex;
+}
+
+.descriptionContent h4{
+    margin: 10px;
+}
+/*footer*/
+
+.footerPrincipal{
+    margin: 0%;
+    padding: 0%;
+    
 }
