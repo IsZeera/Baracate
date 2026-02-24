@@ -1,11 +1,12 @@
 body{
-    background-color: rgb(231, 222, 222);
+    background: var(--background);
     padding: 0%;
     margin: 0%;
     text-decoration: none;
     display: grid;
     grid-template-columns: 100%;
     font-style: Sans-Serif;;
+    color: white;
 
 }
 
@@ -14,7 +15,7 @@ body{
     --text-primary: rgb(2, 0, 37); 
     --text-secondary: rgb(22, 21, 46);
     --text-muted: rgb(61, 62, 75);
-    --background: rgb(10, 12, 34);
+    --background: rgb(13, 15, 34);
     --shadow: rgb(39, 39, 39);
     --border: rgb(139, 139, 139);
     --bg-card: rgba(161, 161, 161, 0.26);
@@ -23,79 +24,73 @@ body{
 
 /*Header*/
 .headerPrincipal{
+    margin: 1px;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    border: 1px solid var(--border);
-
+    border: 1px solid rgb(33, 35, 58);
+    background: rgb(7, 9, 24);
+    height: 70px;
 }
 
 .divHeaderPrincipal{
     display: flex;
-    padding-left:  10px;
+    justify-content: center;
+    align-items: center;
+    padding-left:  10spx;
 }
 
-.imgLogo{
+
+
+.imgLogo{   
+    
     padding: 0%;
     margin: 0%;
 }
 
-.textLogo{
-
-}
-
-.navHeaderPrincipal{
-    padding: 0%;
-    margin: 0%;
-}
-
-.listasGeneral{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-
-}
-
-.listaUniteral{
+.searchDiv{
     display: flex;
     justify-content: center;
-    font-size: 1    rem;
-    font-weight: 900;
-
-    &:hover{
-        color: rgb(77, 77, 243);
-    }
 }
 
-.sectionHeaderMenu{
+.searchStyle {
+    width: 400px;
+    height: 30px;
+    border-radius: 3px;
 
 }
 
 .navMenu{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 10px;
+    justify-content: center;
     align-items: center;
+
+}
+.navMenu a svg{
+    color: white;
 }
 
 
+
 /*main cabezera*/
+
 .mainPrincipal{
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .titlePrincipal{
     display: flex;
     justify-content: center;
-    color: var(--text-primary);
+    color: white;
     margin: 0%;
     padding: 0%;
+    
 }
 
 .divHeader{
@@ -106,7 +101,7 @@ body{
     margin: 0%;
     padding: 0%;
     font-weight: 300;
-    color: var(--text-muted);
+    color: rgb(202, 202, 202);
 }
 
 .sectionNav{
@@ -126,7 +121,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-muted);
+    color: white;
     width: 100px;
     height: 30px;
     border: 1px solid var(--text-muted);
@@ -138,7 +133,8 @@ body{
 /*main seccion contenido*/
 
 .sectioContent{
-    border: 1px solid rgb(192, 187, 187);
+    background: rgb(250, 255, 239);
+    border: 1px solid rgb(192, 192, 192);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -162,8 +158,8 @@ body{
     position: relative;
     overflow: hidden;
     
-    width: 250px;
-    height: 250px;
+    width: auto;
+    height: 200px;
 }
 
 .divImg a{
@@ -231,7 +227,7 @@ body{
 
 .navMainLi.active{
     background: var(--hover);
-    color: white;
+    color: black;
     font-weight: 900;
 
     &:hover{
