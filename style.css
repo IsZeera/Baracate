@@ -1,16 +1,16 @@
 body{
     background: linear-gradient(
         to bottom, 
-        rgb(14, 13, 26) 25%, 
-        rgb(216, 216, 216))no-repeat;
-    background-color: rgb(216, 216, 216);
+        #eafce4 50%, 
+        #fafafa)no-repeat;
+    background-color: #ffffff;
     padding: 0%;
     margin: 0%;
-    height: 100vh;
+    height: 70vh;
     text-decoration: none;
     display: grid;
     grid-template-columns: 100%;
-    color: white;
+    color: #1E293B;
 
 }
 
@@ -28,14 +28,14 @@ body{
 
 /*Header*/
 .headerPrincipal{
-    margin: 1px;
-    border-radius: 10px;
+    margin: 0px 0.5px;
+    border-radius: 0px 0px 5px 5px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     border: 1px solid rgb(33, 35, 58);
-    background: rgb(7, 9, 24);
+    background: #353535;
     height: 70px;
 }
 
@@ -54,6 +54,11 @@ body{
     margin: 0%;
 }
 
+.textLogo{
+    color: white;
+}
+
+
 .searchDiv{
     display: flex;
     justify-content: center;
@@ -65,12 +70,17 @@ body{
 }
 
 .searchStyle {
-    width: 400px;
-    height: 30px;
-    border-radius: 3px;
+    background: #eafce4;
     border: none;
-    box-shadow: 2px 2px rgb(31, 31, 31);
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #1E293B    ;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 600;
 }
+
+
 
 .buttonSvgSearch{
     all: unset;
@@ -87,9 +97,12 @@ body{
     width: 20px;
     height: 20px;
     transition: 0.2s ease;
-    color: black;
+    color: #1E293B;
     &:hover{
-        stroke: blue;
+        stroke: rgb(0, 110, 255);
+        background: rgb(216, 216, 230);
+        border-radius: 20%;
+        
     }
 }
 
@@ -120,7 +133,7 @@ body{
 .titlePrincipal{
     display: flex;
     justify-content: center;
-    color: white;
+    color: #1E293B;
     margin: 0%;
     padding: 0%;
     
@@ -134,7 +147,7 @@ body{
     margin: 0%;
     padding: 0%;
     font-weight: 300;
-    color: rgb(202, 202, 202);
+    color: #64748B;
 }
 
 .sectionNav{
@@ -154,7 +167,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #1E293B;
     width: 100px;
     height: 30px;
     border: 1px solid var(--text-muted);
@@ -167,19 +180,21 @@ body{
 
 /*main seccion contenido*/
 
-.sectioContent{
+.sectionContent{
     background: rgb(250, 255, 239);
-    border-radius: 5px;
     border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(177, 177, 177);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr     ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
     gap: 35px;
-    row-gap: 10px;
+    row-gap: 5px;
     padding-top: 25px;
     padding-left:  10px;
     padding-right: 10px;
-    
+    margin: 0px 80px;
 }
 
 .contetnPrincipal{
@@ -217,17 +232,50 @@ body{
 
 }
 
-.descriptionPrice{
+.divTextPrice{
     display: flex;
-    align-items: flex-start;
-    
-    margin: 0%;  
-    margin-top: 5px;
-    font-weight: 400;
-    font-size:large;
-    color: black;
+    align-items: flex-end;
 
 }
+
+.divPriceAndBefore{
+
+}
+
+.descriptionPriceBefore{
+    padding-left: 5px;
+    text-decoration: line-through;
+    margin: 0%;  
+    font-weight: 300;
+    font-size:12px;
+    color: rgb(59, 59, 59);
+}
+
+.descriptionPrice{
+    margin: 0%;  
+    
+    font-size:1.2rem;
+    font-weight: 700;
+    color: black;
+
+
+}
+
+.descriptionPriceOfert{
+    display: flex;
+    align-items: flex-end   ;
+
+    margin: 0px 2px;  
+    padding: 0%;
+    height: 20px;
+
+    font-weight: 600;
+    font-size:14px;
+    
+    color: rgb(43, 194, 13);
+    background: rgba(193, 247, 183, 0.377);
+}
+
 
 
 /*footer*/
@@ -247,14 +295,14 @@ body{
 
 .navMainLi.active{
     background: var(--hover);
-    color: black;
+    color: #1E293B;
     font-weight: 900;
 
     &:hover{
         background: transparent;
         color: rgb(13, 158, 241);
         border-color: rgb(13, 158, 241);
-        font-weight: 300;
+        font-weight: 600;
     }
 
 }
