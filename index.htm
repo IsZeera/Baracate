@@ -6,6 +6,7 @@
     <title>Baracate</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
 </head>
 
 <body>
@@ -24,13 +25,19 @@
         </div>
         
 
-        <section class="sectionHeaderMenu">
-            <nav class="navMenu">   
-                <a href="">
+        <div class="divHeaderMenu">
+            <button class="divMenu">   
+                <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
                 </a>
-            </nav>
-        </section>  
+            </button>
+
+            <div class="menuActivo">
+                <a href="">WhatsApp</a>>
+            </div>
+
+        </div>  
+
     </header>   
 
     <main class="mainPrincipal">  
@@ -41,17 +48,18 @@
         <section class="sectionNav">   
             <nav>
                 <ul class="navMainHeader">
-                    <li class="navMainLi active" >Todo</li>
-                    <li class="navMainLi" >Consumibles</li>
-                    <li class="navMainLi" >Textiles</li>
-                    <li class="navMainLi" >Accesorios</li>
+                    <li data-categoria="all" class="navMainLi active" >Todo</li>
+                    <li data-categoria="consumibles" class="navMainLi" >Consumibles</li>
+                    <li data-categoria="textiles" class="navMainLi" >Textiles</li>
+                    <li data-categoria="electronica" class="navMainLi" >Electronicos</li>
+                    <li data-categoria="deporte" class="navMainLi" >Deporte</li>
                 </ul>
             </nav>
         </section>
 
         <section class="sectionContent">
             
-            <article class="contetnPrincipal">
+            <article data-categoria="electronica" class="contetnPrincipal">
                 <div class="divImg">
                     <img class="imgProduct" src="./joystick.jpg" alt="">
                     <a href="https://acortar.link/iSfGU3" target="_blank" rel="noreferrer">
@@ -66,7 +74,22 @@
                     </div>
                 </div>
             </article>
-            <article class="contetnPrincipal">
+            <article data-categoria="deporte" class="contetnPrincipal">
+                <div class="divImg">
+                    <img class="imgProduct" src="./balon basquet.jpg" alt="">
+                    <a href="https://acortar.link/iSfGU3" target="_blank" rel="noreferrer">
+                        
+                    </a>
+                </div>
+                
+                <div class="descriptionContent">
+                    <h4 class="descriptionText">Balón Baloncesto Wilson Authentic Nba Basketball</h4>
+                    <div class="divTextPrice">
+                        <h3 class="descriptionPrice">$ 60.99</h3>
+                    </div>
+                </div>
+            </article>
+            <article data-categoria="consumibles" class="contetnPrincipal">
                 <div class="divImg">
                     <img class="imgProduct" src="./ordinary.jpg" alt="">
                     <a href="https://acortar.link/iSfGU3" target="_blank" rel="noreferrer">
@@ -86,7 +109,7 @@
                     </div>
                 </div>
             </article>
-            <article class="contetnPrincipal">
+            <article data-categoria="electronica" class="contetnPrincipal">
                 <div class="divImg">
                     <img class="imgProduct" src="./freidora.jpg" alt="">
                     <a href="https://acortar.link/iSfGU3" target="_blank" rel="noreferrer">
@@ -102,18 +125,18 @@
                 </div>
             </article>
             
-            <article class="contetnPrincipal">
+            <article data-categoria="textiles" class="contetnPrincipal">
                 <div class="divImg">
-                    <img class="imgProduct" src="./joystick.jpg" alt="">
+                    <img class="imgProduct" src="./bermuda.jpg" alt="">
                     <a href="https://acortar.link/iSfGU3" target="_blank" rel="noreferrer">
                         
                     </a>
                 </div>
                 
                 <div class="descriptionContent">
-                    <h4 class="descriptionText">Joystick PS5 Ultimate edition The last Of Us collection</h4>
+                    <h4 class="descriptionText">Bermuda Wanama Kids Toni</h4>
                     <div class="divTextPrice">
-                        <h3 class="descriptionPrice">$ 42.99</h3>
+                        <h3 class="descriptionPrice">$ 7.49</h3>
                     </div>
                 </div>
             </article>
