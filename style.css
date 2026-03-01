@@ -175,6 +175,12 @@ body{
     color: #64748B;
 }
 
+@media(600px > width){
+    .h3titlePrincipal{
+        display: none;
+    }
+}
+
 .sectionNav{
     margin: 0%;
     padding: 0%;
@@ -211,25 +217,27 @@ body{
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgb(177, 177, 177);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
 
-    gap: 35px;
     row-gap: 5px;
     padding-top: 25px;
     padding-left:  10px;
     padding-right: 10px;
-    margin: 0px 80px;
+    width: 90%;
 }
 
+
 .contetnPrincipal{
-    height: 250px;
+    height: 300px;
     cursor: pointer;
 }
 
 .imgProduct{
     width: auto;
-    height: 150px;
+    height: 200px;
 }
 
 .divImg{
