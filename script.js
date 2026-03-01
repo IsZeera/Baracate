@@ -27,23 +27,22 @@ navHeader.forEach(function(item){
 
 const dataNav = document.querySelectorAll(".navMainLi");
 const articuleDataNav = document.querySelectorAll(".contetnPrincipal");
+const mainSection = document.querySelector(".sectionContent")
 
 dataNav.forEach(function(item){
     item.addEventListener("click", function(){
 
         const selectedValue = item.dataset.categoria;
-
+        
         articuleDataNav.forEach(function(job){
 
             const categoria = job.dataset.categoria;
-
-            if(selectedValue === "all" || selectedValue === categoria){
-                job.style.display = "";
-            } else{
-                job.style.display = "none";
-            }
-
+            const isShown =  selectedValue === "all" || selectedValue === categoria
+            job.classList.toggle("is-hidden", !isShown)
         });
 
     });
 });
+
+
+
