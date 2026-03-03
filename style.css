@@ -56,6 +56,7 @@ body{
 
 .textLogo{
     color: white;
+    font-size: 16px;
 }
 
 
@@ -75,9 +76,16 @@ body{
     border-radius: 20px;
     padding: 10px 15px;
     color: #1E293B    ;
-    width: 250px;
+    width: 200px;
     font-size: 14px;
     font-weight: 600;
+}
+
+@media(width < 500px){
+    .searchStyle{
+        width: 170px;
+        font-size: 10px;
+    }
 }
 
 
@@ -132,13 +140,17 @@ body{
 .menuActivo.active{
     display: flex;
     justify-content: center;
+    padding-top:  5px;
     background: #1E293B;
     border-radius: 5px;
     font-size: medium;
-    width: 300px;
+
+
+    width: 200px;
     height: 300px;
     position: fixed;
     z-index: 99;
+    right: 20px;
     a{
         text-decoration: none;
         color: white;
@@ -189,6 +201,8 @@ body{
     padding: 0%;
 }
 
+
+
 .navMainHeader{
     display: flex;
     gap: 5px;
@@ -206,10 +220,15 @@ body{
     height: 30px;
     border: 1px solid var(--text-muted);
     border-radius: 20px;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }   
 
+@media(width < 600px){
+    .navMainLi{
+        width: 70px;
+        font-size: 12px;
+    }
+}
 
 
 /*main seccion contenido*/
