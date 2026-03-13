@@ -76,7 +76,7 @@ body{
     border-radius: 20px;
     padding: 10px 15px;
     color: #1E293B    ;
-    width: 200px;
+    width: 220px;
     font-size: 14px;
     font-weight: 600;
 }
@@ -246,14 +246,17 @@ body{
     
     max-width: 1300px;
     margin:  0 auto;
-    gap: 20px;
-    row-gap: 5px;
-    padding-top: 25px;
-    padding-left:  10px;
-    padding-right: 10px;
+    gap: 10px;
+    padding: 10px 2px;
     overflow: hidden;
 }
 
+@media(width < 600px){
+    .sectionContent{
+        grid-template-columns: repeat(auto-fit, minmax(140px, max-content)
+    );
+    }
+}
 
 
 .contetnPrincipal{
@@ -264,8 +267,16 @@ body{
     margin: 0 auto;
     height: 300px;
     cursor: pointer;
-
 }
+
+@media(width < 600px){
+    .contetnPrincipal{
+        max-width: 150px;
+        height: 200px;
+    }
+}
+
+
 .contetnPrincipal.is-hidden{
     display: none;
 } 
@@ -274,6 +285,14 @@ body{
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+@media(width < 600px) {
+    .imgProduct{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
 }
 
 .divImg{
@@ -292,6 +311,8 @@ body{
 
 }
 
+
+
 .descriptionText{
     margin: 0%;
     font-size: small;
@@ -300,6 +321,11 @@ body{
     color: black;
     width: 200px;
 
+}
+@media (width < 600px){
+    .descriptionText{
+        width: 120px;
+    }
 }
 
 .divTextPrice{
@@ -323,8 +349,8 @@ body{
 
 .descriptionPrice{
     margin: 0%;  
-    font-size:1.2rem;
-    font-weight: 700;
+    font-size:2rem;
+    font-weight: 300;
     color: black;
 
 
@@ -345,7 +371,11 @@ body{
     background: rgba(193, 247, 183, 0.377);
 }
 
-
+@media(width < 600px){
+    .descriptionPrice{
+        font-size: 1.2rem;
+    }
+}
 
 /*footer*/
 
